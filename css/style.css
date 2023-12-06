@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.container > div {
+    display: flex;
+    width: 100%;
+    min-height: 400px;
+}
+
+.container div {
+    outline: 1px solid black;
+}
+
+.first-row div {
+    display: flex;
+    width: 400px;
+    background: aqua;
+    height: 400px;
+}
+.second-row > div {
+    display: flex;
+    flex-direction: column;
+    background: chartreuse;
+    width: 800px;
+}
+
+.second-row > div > div {
+    height: 200px;
+}
+.second-row > div + div {
+    width: 400px;
+}
+.second-row > div + div > div {
+height: 133.33px;
+}
+.third-row {
+    background: rebeccapurple;
+}
+.third-row > div {
+    width: 400px;
+    min-height: 400px;
+}
+.third-row > div + div {
+    width: 800px;
+    height: auto;
+}
+.third-row-one > div {
+    height: 200px;
+}
+.third-row-one > div + div {
+    display: flex;
+    font-size: 0;
+}
+.third-row-one > div + div > div {
+    width: 400px;
+}
+.third-row-one > div + div > div > div {
+    height: 100px;
+}
